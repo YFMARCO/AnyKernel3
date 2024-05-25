@@ -4,17 +4,15 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=ExampleKernel by osm0sis @ xda-developers
+kernel.string=BloodReaper+ Kernel by CuriousNom
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=maguro
-device.name2=toro
-device.name3=toroplus
-device.name4=tuna
-device.name5=
+device.name1=gta4lwifi
+device.name2=gta4l
+device.name3=gta4lxxx
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
@@ -28,8 +26,10 @@ set_perm_recursive 0 0 755 644 $RAMDISK/*;
 set_perm_recursive 0 0 750 750 $RAMDISK/init* $RAMDISK/sbin;
 } # end attributes
 
-# boot shell variables
-BLOCK=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
+# shell variables
+block=/dev/block/bootdevice/by-name/boot;
+block=/dev/block/bootdevice/by-name/dtbo;
+block=/dev/block/bootdevice/by-name/dtb;
 IS_SLOT_DEVICE=0;
 RAMDISK_COMPRESSION=auto;
 PATCH_VBMETA_FLAG=auto;
