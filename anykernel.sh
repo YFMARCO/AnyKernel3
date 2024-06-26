@@ -13,6 +13,7 @@ do.cleanuponabort=0
 device.name1=gta4lwifi
 device.name2=gta4l
 device.name3=gta4lxxx
+device.name4=gta4ljt
 supported.versions=
 supported.patchlevels=
 supported.vendorpatchlevels=
